@@ -226,9 +226,11 @@ Sometimes, you might be using `mrt`, or Meteor from a git checkout. By default, 
 
 ### Access Logs
 
-    mup logs -f
+    mup logs -fn 200
 
 Mup can tail logs from the server and supports all the options of `tail`.
+
+For more information on how the app is deployed into the server, see "Server Setup Details".
 
 ### Reconfiguring & Restarting
 
@@ -332,7 +334,7 @@ You should try and keep `mup` up to date in order to keep up with the latest Met
 Your issue might not always be related to Meteor Up. So make sure you can connect to your instance first, and that your credentials are working properly.
 
 #### Check Logs
-If you suddenly can't deploy your app anymore, first use the `mup logs -f` command to check the logs for error messages.
+If you suddenly can't deploy your app anymore, first use the `mup logs -fn 200` command to check the logs for error messages.
 
 One of the most common problems is your Node version getting out of date. In that case, see “Updating” section above.
 
